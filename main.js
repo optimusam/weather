@@ -20,7 +20,7 @@ function findMe() {
         getWeather(lat, long);
     }
     function error() {
-        output.innerHTML = "Unable to retrieve your location";
+        weather_area.innerHTML = "Unable to retrieve your location";
     }
     navigator.geolocation.getCurrentPosition(success, error);
 }

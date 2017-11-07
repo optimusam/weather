@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-color: #212529;
+    color: white;
+    padding: 0;
+}
+span {
+    margin-right: 1rem;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    font-size: 2rem;
+    top: 5vh;
+    width: 80%;
+    text-align: center;
+}
+.container h1{
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+#weather-area > p {
+    margin: 1rem;
+}
+.units {
+    color: orange;
+    cursor: pointer;
+}
+@media(max-width:768px) {
+    span {
+        display: block;
+        margin: 0 0 1rem 0;
+        padding: 0;
+    }
+    span.units {
+        display: inline;
+    }
+    .container h1 {
+        margin-top: 0;
+    }
+}

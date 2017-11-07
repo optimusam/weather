@@ -32,7 +32,7 @@ function getWeather(lat, long) {
         if (request.status == 200) {
             data = JSON.parse(request.responseText);
             degC = data.main.temp;
-            degF = (9 / 5) * degC + 32;
+            degF = ((9 / 5) * degC + 32).toFixed(1);
             ms = data.wind.speed;
             kmh = (data.wind.speed * 3.6).toFixed(1);
             displayWeather(data);

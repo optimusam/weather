@@ -13,6 +13,7 @@ body {
     background-color: #212529;
     color: white;
     padding: 0;
+    overflow-x: none;
 }
 span {
     margin-right: 1rem;
@@ -36,6 +37,37 @@ span {
 .units {
     color: orange;
     cursor: pointer;
+}
+#source {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:8vh;
+    float: right;
+    border-radius: 50%;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(101deg)
+    }
+    50% {
+        transform: rotate(202deg);
+    }
+    75%{
+        transform: rotate(305deg);
+    }
+    100%{
+        transform: rotate(405deg);
+    }
 }
 @media(max-width:768px) {
     span {
